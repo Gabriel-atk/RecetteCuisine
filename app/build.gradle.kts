@@ -1,20 +1,26 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.jetbrains.kotlin.android)
+    id ("com.android.application")
+    id ("org.jetbrains.kotlin.android")
+    id ("org.jetbrains.kotlin.kapt")
 }
+apply(plugin= "realm-android")
+
 
 android {
     namespace = "tg.eplcoursandroid.recettecuisine"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "tg.eplcoursandroid.recettecuisine"
-        minSdk = 34
+        minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+        viewBinding = true // génération des view bindings
     }
 
     buildTypes {
@@ -36,7 +42,7 @@ android {
 }
 
 dependencies {
-
+    //implementation (libs.androidx.recyclerview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
