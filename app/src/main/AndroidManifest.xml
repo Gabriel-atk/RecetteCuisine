@@ -16,6 +16,12 @@
             android:name=".AjouterRecetteActivity"
             android:exported="false" />
         <activity
+            android:name=".InscriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConnexionActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
