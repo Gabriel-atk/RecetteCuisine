@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import io.realm.Case
 import io.realm.Realm
@@ -16,7 +17,7 @@ class RechercheRecetteActivity : AppCompatActivity() {
     private lateinit var etRecherche: EditText
     private lateinit var btnRechercher: Button
     private lateinit var rvResultats: RecyclerView
-   // private lateinit var adapter: RecetteAdapter // Créez cet adapter pour afficher les résultats
+    private lateinit var adapter: RecetteAdapter // Créez cet adapter pour afficher les résultats
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,16 +25,17 @@ class RechercheRecetteActivity : AppCompatActivity() {
 
         // Initialiser Realm
         realm = Realm.getDefaultInstance()
+        val donnees = realm.where(Recette::class.java).findAll()
 
         // Associer les vues
-       // etRecherche = findViewById(R.id.choixRecherche)
-        //btnRechercher = findViewById(R.id.saisieRecherche)
-        //rvResultats = findViewById(R.id.rvResultats)
+        etRecherche = findViewById(R.id.saisieRecherche)
+        btnRechercher = findViewById(R.id.validSaisie)
+        rvResultats = findViewById(R.id.rvResultats)
 
         // Configurer le RecyclerView
-        //rvResultats.layoutManager = LinearLayoutManager(this)
-       // adapter = RecetteAdapter(listOf()) // Initialisez avec une liste vide
-      //  rvResultats.adapter = adapter
+        rvResultats.layoutManager = LinearLayoutManager(this)
+        adapter = RecetteAdapter(donnees) // Initialisez avec une liste vide
+        rvResultats.adapter = adapter
 
         // Définir l'action du bouton
         btnRechercher.setOnClickListener {
@@ -47,11 +49,11 @@ class RechercheRecetteActivity : AppCompatActivity() {
         val resultats = realm.where<Recette>()
             .contains("titre", query, Case.INSENSITIVE)
             .or()
-            .contains("ingredients.nom", query, Case.INSENSITIVE)
+            .contains("categorie", query, Case.INSENSITIVE)
             .findAll()
 
         // Mettre à jour l'adapter avec les résultats
-        //adapter.updateData(resultats)
+        adapter.updateData(resultats)
     }
 
     override fun onDestroy() {

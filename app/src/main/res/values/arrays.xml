@@ -1,0 +1,140 @@
+<resources>
+    <string-array name="titres">
+        <!-- Entrées -->
+        <item>Salade</item>
+        <item>Akpavi Memeh</item>
+        <item>Ablo</item>
+        <item>Brochettes</item>
+        <item>Tartes aux légumes</item>
+
+        <!-- Plats de résistance-->
+        <item>Couscous</item>
+        <item>Riz au gras</item>
+        <item>Fufu</item>
+        <item>Djenkoume</item>
+        <item>Gboma dessi</item>
+        <item>Spaghetti</item>
+
+        <!-- Desserts-->
+        <item>Crème brûlée</item>
+        <item>Fondant au chocolat</item>
+        <item>Cheesecake</item>
+        <item>Mousse au chocolat</item>
+        <item>Tarte aux pommes</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <!-- Entrées -->
+        <item>Une salade fraîche avec une vinaigrette maison.</item>
+        <item>Plat traditionnel à base de haricots.</item>
+        <item>Pain de maïs moelleux servi chaud.</item>
+        <item>Brochettes de viande marinée.</item>
+        <item>Tarte croquante aux légumes variés.</item>
+
+        <!-- Plats de résistance -->
+        <item>Un couscous savoureux avec légumes et viande.</item>
+        <item>Riz parfumé préparé dans une sauce épicée.</item>
+        <item>Plat traditionnel avec sauce et boulettes d igname.</item>
+        <item>Farine de maïs cuite avec sauce tomate épicée.</item>
+        <item>Épinards cuisinés avec viande ou poisson.</item>
+        <item>Pâtes cuisinées avec une sauce tomate riche.</item>
+
+        <!-- Desserts-->
+        <item>Crème onctueuse caramélisée au chalumeau.</item>
+        <item>Gâteau au chocolat au cœur fondant.</item>
+        <item>Dessert crémeux à base de fromage frais.</item>
+        <item>Mousse légère au chocolat noir.</item>
+        <item>Classique tarte aux pommes caramélisées.</item>
+    </string-array>
+
+    <string-array name="tempsPreparation">
+        <!-- Entrées -->
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+
+        <!-- Plats de résistance -->
+        <item>40 minutes</item>
+        <item>50 minutes</item>
+        <item>60 minutes</item>
+        <item>45 minutes</item>
+        <item>35 minutes</item>
+        <item>30 minutes</item>
+
+        <!-- Desserts -->
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+        <item>35 minutes</item>
+        <item>20 minutes</item>
+        <item>15 minutes</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>Entrées</item>
+        <item>Entrées</item>
+        <item>Entrées</item>
+        <item>Entrées</item>
+        <item>Entrées</item>
+        <item>Plats de résistance</item>
+        <item>Plats de résistance</item>
+        <item>Plats de résistance</item>
+        <item>Plats de résistance</item>
+        <item>Plats de résistance</item>
+        <item>Plats de résistance</item>
+        <item>Desserts</item>
+        <item>Desserts</item>
+        <item>Desserts</item>
+        <item>Desserts</item>
+        <item>Desserts</item>
+    </string-array>
+
+    <string-array name="ingredients">
+        <!-- Entrées -->
+        <item>Laitue, tomates, concombres, vinaigrette maison</item>
+        <item>Haricots, huile de palme, oignons, épices</item>
+        <item>Farine de maïs, levure, sucre, eau</item>
+        <item>Viande marinée, poivrons, oignons, épices</item>
+        <item>Pâte brisée, légumes variés, fromage</item>
+
+        <!-- Plats de résistance -->
+        <item>Semoule de blé, légumes, viande, pois chiches</item>
+        <item>Riz, sauce tomate, viande ou poisson, épices</item>
+        <item>Igname pilé, soupe ou sauce</item>
+        <item>Farine de maïs, tomates, oignons, huile</item>
+        <item>Épinards, huile de palme, viande ou poisson, épices</item>
+        <item>Pâtes, sauce tomate, huile d olive, fromage râpé</item>
+
+        <!-- Desserts -->
+        <item>Crème, sucre, œufs, vanille</item>
+        <item>Chocolat, beurre, farine, œufs</item>
+        <item>Fromage frais, biscuits, sucre, vanille</item>
+        <item>Chocolat, crème, sucre, œufs</item>
+        <item>Pommes, pâte brisée, sucre, cannelle</item>
+    </string-array>
+
+    <string-array name="etapes">
+        <!-- Entrées -->
+        <item>Couper les légumes, Mélanger les ingrédients, Servir frais</item>
+        <item>Faire bouillir les haricots, Ajouter les épices, Mijoter</item>
+        <item>Préparer la pâte, Faire cuire, Laisser refroidir</item>
+        <item>Assembler les brochettes, Faire griller</item>
+        <item>Préparer la pâte brisée, Ajouter les légumes, Faire cuire</item>
+
+        <!-- Plats de résistance -->
+        <item>Cuire la semoule, Préparer les légumes, Mélanger</item>
+        <item>Faire cuire le riz, Préparer la sauce, Mélanger</item>
+        <item>Préparer le fufu, Servir avec la soupe ou la sauce</item>
+        <item>Cuire la farine de maïs, Préparer la sauce tomate, Mélanger</item>
+        <item>Cuire les épinards, Ajouter la viande ou le poisson, Mijoter</item>
+        <item>Cuire les pâtes, Préparer la sauce tomate, Mélanger</item>
+
+        <!-- Desserts -->
+        <item>Préparer la crème, Caraméliser au chalumeau</item>
+        <item>Faire fondre le chocolat, Ajouter les ingrédients, Cuire</item>
+        <item>Préparer le cheesecake, Faire refroidir</item>
+        <item>Faire fondre le chocolat, Préparer la mousse</item>
+        <item>Préparer la pâte, Ajouter les pommes, Faire cuire</item>
+    </string-array>
+</resources>

@@ -1,11 +1,17 @@
 <resources>
     <string name="app_name">RecetteCuisine</string>
+    <string name="title_activity_login">Connexion</string>
     <string-array name="recipe_categories">
         <item>Entrée</item>
         <item>Plat</item>
         <item>Dessert</item>
         <item>Boisson</item>
     </string-array>
-
+    <string-array name="reci">
+        <item>Entrée</item>
+        <item>Plat</item>
+        <item>Dessert</item>
+        <item>Boisson</item>
+    </string-array>
 </resources>
 

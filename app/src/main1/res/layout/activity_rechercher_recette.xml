@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Champ de saisie -->
+
+    <!-- Liste de sélection -->
+
+
+    <!-- Bouton de validation -->
+
+    <Spinner
+        android:id="@+id/choixRecherche"
+        android:layout_width="244dp"
+        android:layout_height="60dp"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/saisieRecherche"
+        android:layout_width="371dp"
+        android:layout_height="58dp"
+        android:hint="Rechercher une recette"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/validSaisie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Valider" />
+
+</LinearLayout>
