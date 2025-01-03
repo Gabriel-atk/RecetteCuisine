@@ -68,4 +68,10 @@ open class Recette(
         newRecette.auteur = auteur
         newRecette.imagePath = imagePath
     }
+
+    fun estFavorie(user: Utilisateur): Boolean {
+        val recettesFavoris = user.recettesFavoris
+        return recettesFavoris.contains(this)
+
+    }
 }
