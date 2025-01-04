@@ -6,20 +6,25 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-
-    <EditText
-        android:id="@+id/saisieRecherche"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:hint="Rechercher une recette"
-        android:inputType="text" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/validSaisie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Valider" />
+        <EditText
+            android:id="@+id/saisieRecherche"
+            android:layout_width="278dp"
+            android:layout_height="58dp"
+            android:hint="Rechercher une recette"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/validSaisie"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="Valider" />
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvResultats"

@@ -1,5 +1,6 @@
 package tg.eplcoursandroid.recettecuisine
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -67,6 +68,24 @@ class MainActivity : AppCompatActivity() {
 
         // Setting onItemClick listener for the adapter
         adapter.onItemClick = ::onItemClicked
+
+        //bottom navigation
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationView.setOnItemSelectedListener{ item ->
+            when(item.itemId){
+                R.id.nav_favorites -> {
+                    val options = ActivityOptions.makeCustomAnimation(this, 0, 0)
+                    startActivity(Intent(this, FavorisActivity::class.java), options.toBundle())
+
+                    true
+                }
+                R.id.nav_recipes -> {
+                    // Deja déjà sur la page principale
+                    true
+                }
+                else -> false
+            }
+        }
     }
 
     override fun onDestroy() {
@@ -94,15 +113,6 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Handling item selection
         return when (item.itemId) {
-            R.id.nav_recipes -> {
-                onMainActivity()
-                true
-            }
-
-            R.id.nav_favorites -> {
-                onFavoritesActivity()
-                true
-            }
             R.id.search -> {
                 onRechercheActivity()
                 true
@@ -119,7 +129,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onFavoritesActivity() {
-        TODO("Not yet implemented")
+        val intent = Intent(this, FavorisActivity::class.java)
+        startActivity(intent)
     }
 
     private fun onMainActivity() {
@@ -134,4 +145,13 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, RechercheRecetteActivity::class.java)
         startActivity(intent)
     }
+
+    override fun onResume() {
+        super.onResume()
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationView.selectedItemId = R.id.nav_recipes
+    }
+
+
+
 }
