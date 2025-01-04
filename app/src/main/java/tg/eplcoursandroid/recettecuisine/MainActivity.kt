@@ -74,8 +74,8 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setOnItemSelectedListener{ item ->
             when(item.itemId){
                 R.id.nav_favorites -> {
-                        val options = ActivityOptions.makeCustomAnimation(this, 0, 0)
-                        startActivity(Intent(this, FavorisActivity::class.java), options.toBundle())
+                    val options = ActivityOptions.makeCustomAnimation(this, 0, 0)
+                    startActivity(Intent(this, FavorisActivity::class.java), options.toBundle())
 
                     true
                 }
