@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
         realm.executeTransactionAsync { realm ->
             val recette = realm.where(Recette::class.java).equalTo("id", recetteId).findFirst()
             if (recette != null) {
-                val intent = Intent(this, ConnexionActivity::class.java)
+                val intent = Intent(this, AffichageRecetteActivity::class.java)
                 intent.putExtra("recetteId", recette.id)
                 startActivity(intent)
             }

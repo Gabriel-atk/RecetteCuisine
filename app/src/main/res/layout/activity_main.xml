@@ -24,8 +24,8 @@
 
     <TextView
         android:id="@+id/text1"
-        android:layout_width="406dp"
-        android:layout_height="36dp"
+        android:layout_width="513dp"
+        android:layout_height="67dp"
         android:layout_marginBottom="32dp"
         android:text="Les recettes disponibles"
         android:textSize="90px"

@@ -10,7 +10,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import io.realm.Realm
 import io.realm.RealmList
 import io.realm.RealmResults
-import tg.eplcoursandroid.recettecuisine.MainActivity
 import tg.eplcoursandroid.recettecuisine.databinding.ActivityFavorisBinding
 import tg.eplcoursandroid.recettecuisine.models.Recette
 import tg.eplcoursandroid.recettecuisine.models.Utilisateur
